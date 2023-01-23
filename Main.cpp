@@ -1,24 +1,27 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int r1, r2;
-    const int size = 12;
-    int arr[size];
-    int max = arr[0], min = arr[0];
-    for (int i = 0; i < size; i++)
-    {
-        cout << "Enter pribil:" << endl;
-        cin >> arr[i];
-        if (arr[i] > max)
-            max = arr[i];
-        if (arr[i] < min)
-            min = arr[i];
-    }
-    cout << "Minimum: " << min << endl;
-    cout << "Maximum: " << max << endl;
-    system("pause");
-    return 0;
+	int a, b, c, d, e;
+	int sum;
+	const uint32_t size = 5;
+	int arr[size];
+	cin >> sum;
+	cout << "Input storona a:";
+	cin >> a;
+	cout << "Input storona b:";
+	cin >> b;
+	cout << "Input storona c:";
+	cin >> c;
+	cout << "Input storona d:";
+	cin >> d;
+	cout << "Input storona å:";
+	cin >> e;
+	for (size_t i = 0; i < size; i++)
+	{
+		sum += arr[i];
+	}
+	sum = a + b + c + d + e;
+	cout << "Perumetr--> " << sum << endl;
+	return 0;
 }
-
-//gdfg
